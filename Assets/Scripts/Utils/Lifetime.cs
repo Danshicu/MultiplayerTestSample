@@ -2,17 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Lifetime : MonoBehaviour
+public class Lifetime 
 {
-    // Start is called before the first frame update
-    void Start()
+    public Lifetime(GameObject gameObject, float lifetime)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        GameObject.Destroy(gameObject, lifetime);
     }
 }
